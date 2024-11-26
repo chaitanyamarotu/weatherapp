@@ -6,7 +6,7 @@
         <lightning-button class="slds-m-around_medium" label="Fetch Weather" variant="brand" onclick={handleGetWeather}></lightning-button>
         <div if:true={weatherIcon} class="slds-m-around_medium">
             <img src={weatherIcon} alt="Weather icon not found">
-            <strong>{temparture}</strong>
+            <strong>{weatherText}</strong>
             <br>
             <p>State Name: <strong>{statename}</strong></p>
             <br>
