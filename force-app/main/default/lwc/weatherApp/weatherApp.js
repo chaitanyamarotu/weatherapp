@@ -7,7 +7,7 @@ export default class WeatherApp extends LightningElement {
     weatherText;
     statename;
     region;
-    temparture;
+    temperature;
 
     handleCity(event){
         this.city=event.target.value;
@@ -20,7 +20,7 @@ export default class WeatherApp extends LightningElement {
           this.weatherText=weatherParseData.current.condition.text;
           this.statename=weatherParseData.location.name;
           this.region=weatherParseData.location.region;
-          this.temparture=weatherParseData.current.temperature;
+          this.temperature=weatherParseData.current.temp_c;
         })
         .catch(error=>{
             console.log(error);
